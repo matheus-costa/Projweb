@@ -1,0 +1,35 @@
+
+<h1>Cadastro de Produtos: </h1>
+
+<div class="">
+
+    <form action="/criarCadastro" method="post">
+<label for="nomeproduto">Nome Produto:</label><br>
+<input class="input-group-text" type="text" name="nomeproduto" id="nomeproduto" placeholder="Nome do Produto" required><br>
+
+<label for="valorproduto">Valor do Produto:</label><br>
+<input type="float" class="input-group-text" name="valorproduto" id="valorproduto" placeholder="Valor do Produto" required><br>
+
+<label for="qtdproduto">Quantidade de Produto:</label><br>
+<input type="number" class="input-group-text" min="1" name="qtdproduto" id="qtdproduto" placeholder="Quantidade de Produto"  required><br>
+
+
+<label for="descproduto">Descrição do Produto:</label><br>
+
+<input type="text"  class="input-group-text" name="descproduto" id="descproduto" placeholder="Descrição do Produto" required><br>
+<label>Categoria:</label><br>
+
+
+            <input type="radio" id="radio1" name = "categoria" value="Artesanato"/> 
+			<label for="radio1">Artesanato </label><br>
+			<input type="radio" id="radio2" name="categoria" value="Orgânico"/> 
+			<label for="radio2">Orgânico </label><br>
+            <input  type="radio" id="radio2" name="categoria" value="Vegano"/> 
+            <label for="radio3"> Vegano </label><br>
+
+
+
+<button type="submit" class="btn btn-primary">Cadastrar Produto</button>
+
+    </form>
+</div>
